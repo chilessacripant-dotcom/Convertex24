@@ -1105,7 +1105,7 @@ function calculateAndFill() {
     }
 
     // Динамічний розрахунок мінімуму для обміну (еквівалент 1000 USD)
-    const minUsdLimit = 1000;
+    const minUsdLimit = 100;
     const minCoinAmount = minUsdLimit / state.rates[state.send];
     document.getElementById('min-limit-display').textContent = `${minCoinAmount.toFixed(COINS[state.send].decimals)} ${state.send}`;
 
